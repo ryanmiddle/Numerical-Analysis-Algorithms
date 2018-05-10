@@ -1,5 +1,5 @@
 %% False Position Algorithm
-function falsePosition(func,xl,xu,es,maxiter)
+function [root,fx,ea,iter]= falsePosition(func,xl,xu,es,maxiter)
 % this function uses the false position method to estimate the zeros of a 
 %given funtion. The variables func, xl, xu, es, and iter are required in 
 %order for this function to run. if es and iter are not inputed,they will 
@@ -56,9 +56,5 @@ end
 
 end
 fx=func(root);
-% display all outputs
-display(ea)
-display(fx)
-display(root)
-display(iter)
+
 end
